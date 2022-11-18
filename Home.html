@@ -2,15 +2,14 @@
 <html>
 <head>
     <title>Student Of The Year</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <meta charset="utf-8">
 </head>
-<style>
-  h2{
-    color: rgb(39, 39, 39);
-  }
-</style>
+
 <body>
-  
+
+    <form>
     <h1>Name</h1>
     <input type="text"  id="nameField">
     <h1>Semester</h1>
@@ -18,12 +17,12 @@
     <h1>Register Number</h1>
     <input type="text"  id="regnoField">
     <br><br>
-    
     <button onclick="writeData()"> Submit </button>
-  
+    </form>
 
 
-  </style>
+
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
@@ -49,6 +48,10 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
 
+
+
+
+
       //add function 
       function writeData() {
         firebase.database().ref("User").set({
@@ -57,6 +60,11 @@
             Regno: document.getElementById ("regnoField").value
         });
       }
+
+
+
+
+
     </script>
 
     
