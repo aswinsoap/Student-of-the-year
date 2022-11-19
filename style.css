@@ -15,10 +15,6 @@ body{
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
-.wrapper {
-    width: 1850px;
-    margin: 0 auto;
-}
 
 nav{
     display: flex;
@@ -26,6 +22,11 @@ nav{
     justify-content: space-between;
     height: 72px;
 
+}
+.wrapper {
+    width: 1850px;
+    margin: 0 auto;
+    margin-left: 30px;
 }
 
 nav ul {
@@ -54,33 +55,49 @@ nav .logo{
 }
 
 /* Header */
+.header-container{
+    
+    justify-content: space-between;
+}
+.quotes-container{
+    
+    margin-left: 35px;
+    margin-top: 40px;
+    
+}
+.login-container{
+    margin-right: 35px;
+    margin-top: 40px;
+}
+
 
 .header-container {
-    background: #ffffff url('images/book.jpg');
-    background-size:cover;
+    background: rgb(119,255,224);
+    background: linear-gradient(45deg, rgba(119,255,224,0.25) 0%, rgba(165,161,255,0.25) 100%);
     height: calc(100vh - 72px);
     display: flex;
     align-items: flex-start;
+    
 }
 
 header {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
 header p {
     
-    font-size: 32px;
+    font-size: 24px;
     line-height: 53px;
     color: #000000;
     width: 800px;
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    
     
 }
 header p:hover {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 10px rgba(48, 48, 48, 0.3);
 
 }
 
@@ -102,15 +119,79 @@ header a:hover {
     transform: scale(1.03);
 }
 
+.login{
+    background-color: #ffffff;
+    height: 500px;
+    width: 350px;
+    border-radius: 15px; 
+    align-items: center;
 
-header .login .photo-bg {
-    position: absolute;
-    width: 500px;
-    height: 630px;
-    left: 1380px;
-    top: 120px;
 
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 28px;
+}
+h2{
+    font-family: 'Roboto';
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 80px;
+    box-sizing: border-box;
+    margin: 0;
     
 }
+
+
+.footer{
+    box-sizing: border-box;
+    margin: 0;
+    height: 120px;
+    
+}
+.form-group{
+    margin: 15px;
+    text-align: center;
+}
+
+.button{
+    font-family: 'Roboto';
+    font-size: 24px; 
+    text-align: center;
+    text-decoration: none;
+    color:#000000;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 100px;
+    padding: 10px 48px;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+    top: 35px;
+    left: 57px;
+    transition: 300ms;
+    
+}
+.button:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+    
+input {
+    font-family: 'roboto',sans-serif;
+    font-size: 24px;
+    outline: 0;
+    background: #ffffff;
+    width: 285px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:20px;
+}
+input::placeholder {
+    font-size: 20px;
+}
+
+
+
+
