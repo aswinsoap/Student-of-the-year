@@ -36,6 +36,7 @@ nav .logo{
     color: #000000; 
 }
 
+
 .nav-items li{
     list-style: none;
     margin-right: 35px;
@@ -71,8 +72,9 @@ nav .logo{
     
 }
 .login-container{
-    margin-right: 35px;
-    margin-top: 40px;
+    border: solid black;
+    display: block;
+    margin: auto;
 }
 
 
